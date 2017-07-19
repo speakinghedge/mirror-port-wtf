@@ -24,9 +24,10 @@ This turns the port that connects the switch to the PLC to ***the*** access poin
 
 Usually those 'cell control level' switches (e.g. SIEMENS Scalance 200*)offer basic management functions and the option to copy all traffic (RX and TX) from one port to another (mirror resp. span) port - so network traffic could be collected easily. 
 
-I used the phrase *could* as Chris Greer from Garland - a company developing, producing and selling network TAPs (devices to collect network traffic from the wire without using a mirror/span port)- published a blog entry that claims: if you are going to use mirroring you will loose up to *8 (!!!) percent* of your frames under high load conditions.
+I used the phrase *could* cause Chris Greer from [Packet Pioneer](https://packetpioneer.com/) did some mirror port performance tests and Garland (a company developing, producing and selling network TAPs) published some numbers based on those test in their [blog](https://www.garlandtechnology.com/2014/06/16/the-test-span-vs-tap). 
+The key message: if you are going to use mirroring you will loose up to *8 (!!!) percent* of your frames under high load conditions. Strong words if your are selling TAP devices.
    
-The numbers as given by Garland are:
+The numbers as given as in the blog entry:
 - 100 MBit/s link (on a CISCO Catalyst switch)
 - traffic generated using [iperf](https://iperf.fr/), link saturated at 93.1 Mbps - 11637500 bytes / s (~11 MByte/s)
 - test runs for 10 seconds
