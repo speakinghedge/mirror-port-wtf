@@ -1,0 +1,13 @@
+cycler==0.10.0
+functools32==3.2.3.post2
+jsonpickle==0.9.4
+matplotlib==2.0.2
+numpy==1.13.1
+protobuf==3.3.0
+pyparsing==2.2.0
+python-dateutil==2.6.1
+python-ostinato==0.8
+pytz==2017.2
+six==1.10.0
+SQLAlchemy==1.1.11
+subprocess32==3.2.7
